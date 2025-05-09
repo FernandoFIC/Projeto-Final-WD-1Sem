@@ -1,111 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Sabor na Brasa</title>
-    <meta charset="utf-8"/>
+    <title>Mundo Afora</title>
+    <meta charset="UTF-8"/>
     <meta name="author" content="Fernando Cavalcante" />
-    <meta name="description" content="Site para uma hamburgueria fictícia" />
+    <meta name="keywords" content="Teste, avaliação, html, css" />
+    <link rel="stylesheet" href="./estilo.css">
+    <meta name="description" content="Site para avaliação de CSS" />
 </head>
-<body link="#ffa800" alink="#ffa800" vlink="#ffa800" bgcolor="#1c1c1c">
-    <img src="img/banner.png" id="pag-topo" alt="Banner com a logo da Sabor na Brasa ao lado de uma imagem de um hambúrguer artesanal com uma foto desfocada do interior da hamburgueria" width="100%" />
-    <p align="right">
-        <font face="Arial Black" size="4" color="#e6e6e6">
-            <a href="#pag-sobre">SOBRE</a>
-            <a href="#pag-promos">PROMOÇÕES</a>
-            <a href="#pag-delivery">DELIVERY</a>
-        </font>
-    </p>
-    <hr id="pag-sobre"/>
-    <font face="Trebuchet MS" size="5" color="#ffd21d">
-        <h1>Sabor na Brasa</h1>
-    </font>
-    <font face="Tahoma" size="4" color="#e6e6e6">
-        <p align="justify">
-            Descubra seu novo paladar na Sabor na Brasa,
-            onde cada mordida é uma explosão de sabor!
-            A nossa hamburgueria é o destino perfeito para os amantes de hambúrgueres artesanais e ingredientes frescos.
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="banner">
+        <img src="./img/banner.png" alt="Banner da Mundo Afora, mostrando um avião no céu com o texto 'Mundo Afora' e 'Viagens & Turismo'"/>
+    </section>
+<div class="conteudo">
+    <section id="sobre" class="sobre">
+        <h2>Sobre a Mundo Afora</h2>
+        <p>
+            Descubra os melhores destinos e viva experiências inesquecíveis com a Mundo Afora. Oferecemos pacotes de viagens para os lugares mais incríveis do mundo, com total conforto e segurança. Conquiste memórias que durarão para sempre.
+            Com mais de 20 anos no mercado de turismo, a Agência Mundo Afora se destaca por proporcionar viagens personalizadas, com pacotes exclusivos para cada tipo de viajante. Nossa missão é transformar sua viagem dos sonhos em realidade, com destinos nacionais e internacionais que encantam e inspiram. Oferecemos atendimento especializado, suporte completo e parcerias com as melhores redes hoteleiras e companhias aéreas.
         </p>
-        <p align="justify">
-            Aqui na Sabor na Brasa, acreditamos que um bom hambúrguer começa com ingredientes de qualidade.
-            Nossos pães são sempre fresquinhos, preparados diariamente para garantir aquela textura macia e sabor irresistível.
-            A carne é 100% bovina, suculenta e temperada na medida certa, grelhada com perfeição para preservar o máximo de sabor.
-            E para os vegetarianos e veganos, temos opções deliciosas que não deixam nada a desejar!
-        </p>
-        <hr id="pag-promos"/>
-        <font face="Trebuchet MS" size="5" color="#ffd21d">
-            <h1>Promoções</h1>
-        </font>
-        <p align="justify">
-            Os hambúrgueres a seguir estão em promoção nesse fim de semana. Aproveite!
-        </p>
-        <table border="1">
-            <tr>
-                <td colspan="2"><img src=./img/produto1.png width="250" height="175"></td>
-                <td colspan="2"><img src=./img/produto2.png width="250" height="175"></td>
-                <td colspan="2"><img src=./img/produto4.png width="250" height="175"></td>
-                <td colspan="2"><img src=./img/produto3.png width="250" height="175"></td>
-            </tr>
-            <tr>
-                <td>
-                    <b>X-Burguer</b>
-                    <td>R$18,99</td>
-                </td>
-                <td>
-                    <b>Burguer Duplo</b>
-                    <td>R$20,99</td>
-                </td>
-                <td>
-                    <b>X-Frango</b>
-                    <td>R$22,90</td>
-                </td>
-                <td>
-                    <b>X-Cebola</b>
-                    <td>R$26,90</td>
-                </td>
-            </tr>
-        </table>
-    <hr id="pag-delivery"/>
-    <font face="Trebuchet MS" size="5" color="#ffd21d">
-        <h1>Delivery</h1>
-    </font>
-    <p align="justify">
-        Entre com as informações abaixo para fazer o seu pedido.
-    </p>
-        <form name="" method="" action="">
-            <label for="email">E-Mail:</label><br/>
-            <input id="email" type="email" name="email" size="64" placeholder="exemplo@teste.com" required/><br/><br/>
-            <label for="endereco">Endereço:</label><br/>
-            <input id="endereco" type="text" name="endereco" size="64" placeholder="Digite seu endereço completo"
-            required autofocus/><br/><br/>
-            <label for="produto">Produto:</label>
-            <select id="produto">
-                <option value="">Selecione</option>
-                <option value="1">Cimento</option>
-                <option value="2">Cimento</option>
-                <option value="3">Cimento</option>
-                <option value="4">Cimento</option>
-            </select><br/><br/>
-            <fieldset>
-                <legend>Forma de Pagamento:</legend>
-                <input id="dinheiro" type="radio" name="pagamento" value="dinheiro"/> <label for="dinheiro">Dinheiro</label><br/>
-                <input id="cartao" type="radio" name="pagamento" value="cartao"/> <label for="cartao">Cartão</label>
-            </fieldset><br/>
-            <label for="quantidade">Quantidade:</label>
-            <input id="quantidade" type="number" name="quantidade" min="1" max="99" step="1"/><br/><br/>
-            <label for="obs">Observações:</label><br/>
-            <textarea id="obs" cols="64" rows="6"></textarea>
-            <p>
-            <input type="submit" name="btn_agendar" value="Agendar"/>
-            <input type="reset" name="btn_cancelar" value="Cancelar"/>
-            </p>
+    </section>
+</div>
+    <section id="destinos" class="destinos">
+        <h2>Destinos em Destaque</h2>
+        <div class="locais">
+            <div class="local">
+                <img src="./img/paris.png" class="imagem"/>
+                <p>Paris, França</p>
+                <p class="preco">A partir de R$4.999,99</p>
+            </div>
+            <div class="local">
+                <img src="./img/maldivas.png" class="imagem"/>
+                <p>Maldivas</p>
+                <p class="preco">A partir de R$7.499,99</p>
+            </div>
+            <div class="local">
+                <img src="./img/novaIorque.png" class="imagem"/>
+                <p>Nova Iorque, EUA</p>
+                <p class="preco">A partir de R$5.299,99</p>
+            </div>
+            <div class="local">
+                <img src="./img/rj.png" class="imagem"/>
+                <p>Rio de Janeiro, Brasil</p>
+                <p class="preco">A partir de R$2.199,99</p>
+            </div>
+        </div>
+    </section>
+<div class="conteudo">
+    <section id="login" class="login">
+        <h2>Acesse sua Conta</h2>
+        <form action="#">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seunome@email.com">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha">
+            <button type="submit" class="botaoLogin">Login</button>
+            <button type="reset" class="botaoCancelar">Cancelar</button>
         </form>
-    <hr/>
-    <font face="Arial Black" size="4" color="#e6e6e6">
-        <p align="right">
-        <a href="#pag-topo">TOPO</a>
-        </p>
-    </font>
-    <p align="center">Desenvolvido por <a href="http://instagram.com/ffic05" target="_blank">Fernando Cavalcante</a> - 2024</p>
-</font>
+    </section>
+</div>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/fernando-fabio-a88946311" target="_blank">Fernando Cavalcante</a> - 2024</p>
+    </footer>
 </body>
 </html>
